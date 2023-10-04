@@ -1,3 +1,3 @@
 # Tiramisu Autoscheduler
 
-This repository contains a standalong version of the Tiramisu auto-scheduler, which supports auto-scheduling SDFGs.
+This repository contains a standalone version of the Tiramisu auto-scheduler for SDFGs.
