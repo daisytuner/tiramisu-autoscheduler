@@ -56,7 +56,7 @@ std::shared_ptr<sdfg_wrapper> sdfg_wrapper::create(std::string sdfg_path)
 {
     // py::scoped_interpreter guard{};
 
-    py::module_ daisy_backend = py::module_::import("daisytuner.tuning.polyhedral.tiramisu_tuner");
+    py::module_ daisy_backend = py::module_::import("daisytuner.optimizer.tiramisu.tiramisu_tuner");
     py::object py_result = daisy_backend.attr("encode")(sdfg_path);
 
     std::string repr_str = py_result.cast<std::string>();
